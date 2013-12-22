@@ -1,16 +1,17 @@
 GIT
+  remote: git://github.com/gripthumb/nestling.git
+  revision: d11ff3151dc9938750734388f4970d5142d823af
+  specs:
+    nestling (0.1.0)
+      json (~> 1.8)
+
+GIT
   remote: git://github.com/josevalim/inherited_resources.git
   revision: e4fb9fc804488532014307190812946d63a480a3
   specs:
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
-
-PATH
-  remote: ~/src/nestling
-  specs:
-    nestling (0.1.0)
-      json (~> 1.8)
 
 GEM
   remote: https://rubygems.org/

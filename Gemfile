@@ -6,7 +6,7 @@ gem 'active_model_serializers'
 gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'has_scope'
 gem 'pg'
-gem 'nestling', path: "~/src/nestling"#github: 'gripthumb/nestling'
+gem 'nestling', github: 'gripthumb/nestling'
 gem 'unicorn'
 
 group :development, :test do
