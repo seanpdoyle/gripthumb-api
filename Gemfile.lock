@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gripthumb/nestling.git
-  revision: d11ff3151dc9938750734388f4970d5142d823af
+  revision: e4afc4c554504b485efba1a3cc560477c8dd7ecb
   specs:
     nestling (0.1.0)
       json (~> 1.8)
