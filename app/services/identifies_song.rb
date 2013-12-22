@@ -9,17 +9,14 @@ class IdentifiesSong
     end
 
     def call
-      if best_match.present?
-        Song.find_by!(guid: best_match[:id])
-      else
-        raise ActiveRecord::RecordNotFound
-      end
+      best_match || raise(ActiveRecord::RecordNotFound)
     end
 
     private
-
       def best_match
-        songs.first || {}
+        songs.inject(nil) do |match, song|
+          match || Song.find_by(guid: song[:id])
+        end
       end
 
       def songs
