@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# Setup the project
+
+bundle install
+
+bin/rake db:create db:migrate db:test:prepare
+
+if [ ! -f .env ]; then
+  cp .env.sample .env
+
+  echo
+  echo "Created '.env' from '.env.sample'"
+  echo
+  echo "Be sure update it with appropriate values!"
+  echo
+fi

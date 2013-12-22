@@ -1,0 +1,1 @@
+Nestling.api_key = ENV['ECHONEST_API_KEY']

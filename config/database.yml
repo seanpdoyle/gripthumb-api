@@ -1,0 +1,13 @@
+development: &default
+  adapter: postgresql
+  database: gripthumb_development
+  encoding: unicode
+  min_messages: warning
+  host: localhost
+  port: <%= ENV["BOXEN_POSTGRESQL_PORT"] || 5432 %>
+  pool: 5
+  timeout: 5000
+
+test:
+  <<: *default
+  database: gripthumb_test
