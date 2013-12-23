@@ -37,15 +37,19 @@ class Scrapes::SkateVideo
     end
 
     def part_name
-      PART.match(info_node)[1].squish
+      matching(PART)
     end
 
     def artist_name
-      ARTIST.match(info_node)[1].squish
+      matching(ARTIST)
     end
 
     def song_name
-      SONG.match(info_node)[1].squish
+      matching(SONG)
+    end
+
+    def matching(regex)
+      (regex.match(info_node) || [nil, ""])[1].squish
     end
 
     def info_node
