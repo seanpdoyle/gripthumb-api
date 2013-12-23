@@ -12,7 +12,10 @@ class Scrapes::SkateParts
       scrape
     else
       if @song.parentheses_in_name?
-        @song.name = @song.sanitized_name.gsub(/and/i, "&")
+        @song.name = @song.sanitized_name
+        self.class.new(@song).call
+      elsif /and/i.match(@song.name)
+        @song.name = @song.name.gsub(/and/i, "&")
         self.class.new(@song).call
       end
     end
@@ -35,7 +38,7 @@ class Scrapes::SkateParts
 
     def response
       Net::HTTP.post_form URI, {
-        searchterm: "#{@artist_name} #{@song.name}"
+        searchterm: "#{@song.artist_name} #{@song.name}"
       }
     end
 end
