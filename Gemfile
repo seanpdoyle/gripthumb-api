@@ -11,6 +11,7 @@ gem 'pg'
 gem 'nestling', github: 'gripthumb/nestling'
 gem 'nokogiri'
 gem 'sidekiq'
+gem 'sinatra', '>= 1.3.0', require: false
 gem 'unicorn'
 
 group :development, :test do
