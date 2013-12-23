@@ -10,6 +10,7 @@ gem 'has_scope'
 gem 'pg'
 gem 'nestling', github: 'gripthumb/nestling'
 gem 'nokogiri'
+gem 'sidekiq'
 gem 'unicorn'
 
 group :development, :test do
@@ -27,6 +28,7 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'rspec-rails', '>= 2.14'
+  gem 'rspec-sidekiq'
   gem 'shoulda-matchers'
   gem 'timecop'
   gem 'vcr'
@@ -34,6 +36,7 @@ group :test do
 end
 
 group :staging, :production do
+  gem 'autoscaler'
   gem 'newrelic_rpm', '>= 3.6.7'
   gem 'rails_12factor'
 end
