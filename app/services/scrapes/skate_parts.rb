@@ -12,7 +12,7 @@ class Scrapes::SkateParts
       scrape
     else
       if @song.parentheses_in_name?
-        @song.name = @song.sanitized_name
+        @song.name = @song.sanitized_name.gsub(/and/i, "&")
         self.class.new(@song).call
       end
     end
