@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe ScrapesSkateParts, "given an Echoprint response" do
+describe Scrapes::SkateParts, "given an Echoprint response" do
   let(:guid)    { "SODUMAG137283652FD" }
   let(:artist)  { "JAY Z" }
   let(:name)    { "On to the Next One (feat. Swizz Beats)" }
 
   before do
-    ScrapesSkateParts.new(
+    Scrapes::SkateParts.new(
       build(
         :song,
         artist_name: artist,

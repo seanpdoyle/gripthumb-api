@@ -1,6 +1,6 @@
 require 'nokogiri'
 
-class ScrapesSkateParts
+class Scrapes::SkateParts
   URI = URI.parse("http://www.skatevideosite.com/songsearch")
 
   def initialize(song)
@@ -21,7 +21,7 @@ class ScrapesSkateParts
   private
     def scrape
       skate_videos.each do |skate_video|
-        ScrapesSkateVideo.new(skate_video, @song).call
+        Scrapes::SkateVideo.new(skate_video, @song).call
       end
     end
 

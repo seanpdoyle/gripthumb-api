@@ -1,4 +1,4 @@
-class ScrapesSkateVideo
+class Scrapes::SkateVideo
   PART    = /(.+)-/
   ARTIST  = /.+-(.+)-.+/
   SONG    = /.+-.+-(.+)/
