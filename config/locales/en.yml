@@ -1,4 +1,4 @@
 en:
   hello: "Hello world"
-  missing: "Failed to find %{controller_name}"
+  missing: "Failed to find %{collection}"
 
