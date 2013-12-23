@@ -9,6 +9,7 @@ gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'has_scope'
 gem 'pg'
 gem 'nestling', github: 'gripthumb/nestling'
+gem 'nokogiri'
 gem 'unicorn'
 
 group :development, :test do
@@ -28,6 +29,7 @@ group :test do
   gem 'rspec-rails', '>= 2.14'
   gem 'shoulda-matchers'
   gem 'timecop'
+  gem 'vcr'
   gem 'webmock'
 end
 
