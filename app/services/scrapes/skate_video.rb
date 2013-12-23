@@ -1,5 +1,5 @@
 class Scrapes::SkateVideo
-  PART    = /(.+)-/
+  PART    = /(.+)-.+-.+/
   ARTIST  = /.+-(.+)-.+/
   SONG    = /.+-.+-(.+)/
 
