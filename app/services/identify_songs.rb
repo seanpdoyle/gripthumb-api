@@ -4,7 +4,7 @@ class IdentifySongs
   end
 
   def call
-    @songs ||= client.identify(version: 4.12, code: @code)
+    @songs ||= client.identify(version: 4.12, code: @code).map(&:with_indifferent_access)
   end
 
   private

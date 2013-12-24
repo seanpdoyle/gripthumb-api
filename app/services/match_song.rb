@@ -1,4 +1,6 @@
 class MatchSong
+  KEYS = [:id, :artist_name, :title].freeze
+
   def self.with_code(code, identify = nil)
     new(code, identify).call
   end
@@ -29,8 +31,10 @@ class MatchSong
     end
 
     def song_jobs
-      songs.map do |song|
-        [song[:id], song[:artist_name], song[:title]]
-      end
+      songs.map{|song|
+        if KEYS.all?{|k| song.has_key?(k)}
+          KEYS.map{|k| song[k]}
+        end
+      }.reject(&:blank?)
     end
 end
