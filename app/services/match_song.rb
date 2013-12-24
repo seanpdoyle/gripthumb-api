@@ -25,6 +25,6 @@ class MatchSong
     end
 
     def song_jobs
-      songs.map{|song| [song.guid, song.name, song.artist_name]}
+      songs.map{|song| [song.guid, song.artist_name, song.name]}
     end
 end

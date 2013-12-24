@@ -13,8 +13,8 @@ describe SongsController, "GET" do
   end
 
   context "with a non-existent song code" do
-    let(:match) { build(:song) }
-    let(:lookup_job) { [match.guid, match.name, match.artist_name] }
+    let(:match)       { build(:song) }
+    let(:lookup_job)  { [match.guid, match.artist_name, match.name] }
 
     before do
       IdentifySongs.any_instance.stub(:call).and_return([match])

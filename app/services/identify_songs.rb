@@ -17,8 +17,8 @@ class IdentifySongs
     def song_from_echoprint(song_hash)
       Song.new(
         guid: song_hash[:id],
-        name: song_hash[:title],
-        artist_name: song_hash[:artist_name]
+        artist_name: song_hash[:artist_name],
+        name: song_hash[:title]
       )
     end
 
