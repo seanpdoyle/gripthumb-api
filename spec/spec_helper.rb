@@ -12,6 +12,8 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
+  config.include ControllerHelper, type: :controller
+
   config.fail_fast = true
   config.infer_base_class_for_anonymous_controllers = false
   config.order = 'random'

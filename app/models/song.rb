@@ -1,8 +1,8 @@
 class Song < ActiveRecord::Base
   has_many :parts
 
-  def self.identify(code)
-    MatchSong.with_code(code)
+  def self.identify(code, identify = nil)
+    MatchSong.new(code, identify).call
   end
 
   def sanitized_name

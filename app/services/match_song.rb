@@ -1,10 +1,4 @@
 class MatchSong
-  KEYS = [:id, :artist_name, :title].freeze
-
-  def self.with_code(code, identify = nil)
-    new(code, identify).call
-  end
-
   def initialize(code, identify = nil)
     @code = code
     @identify = identify || IdentifySongs.new(@code)
@@ -22,7 +16,7 @@ class MatchSong
 
     def best_match
       songs.inject(nil) do |match, song|
-        match || Song.find_by(guid: song[:id])
+        match || Song.find_by(guid: song.guid)
       end
     end
 
@@ -31,10 +25,6 @@ class MatchSong
     end
 
     def song_jobs
-      songs.map{|song|
-        if KEYS.all?{|k| song.has_key?(k)}
-          KEYS.map{|k| song[k]}
-        end
-      }.reject(&:blank?)
+      songs.map{|song| [song.guid, song.name, song.artist_name]}
     end
 end
