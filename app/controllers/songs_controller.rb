@@ -19,11 +19,12 @@ class SongsController < InheritedResources::Base
         error: t("missing", collection: "songs")
       }
       if best_match = identifier.call.first
-        missing_response.merge song: {
+        missing_response.merge! song: {
           name: best_match.name,
           artist_name: best_match.artist_name
         }
       end
+      missing_response
     end
 
     def song_code
