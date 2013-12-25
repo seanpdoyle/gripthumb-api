@@ -12,31 +12,47 @@ describe SongsController, "GET" do
     end
   end
 
-  context "with a non-existent song code" do
-    let(:match)       { build(:song) }
-    let(:lookup_job)  { [match.guid, match.artist_name, match.name] }
+  context "with an missing song" do
+    context "unidentified by EchoNest" do
 
-    before do
-      IdentifySongs.any_instance.stub(:call).and_return([match])
-      post :identify, code: match.guid
+      before do
+        IdentifySongs.any_instance.stub(:call).and_return([])
+        post :identify, code: "12345"
+      end
+
+      it { should respond_with(:missing) }
+
+      it "returns the error" do
+        expect(json).to eq({
+          error: t("missing", collection: "songs")
+        })
+      end
     end
 
-    it "enqueues a scrape job" do
-      expect(ScrapeWorker).to have_enqueued_job(*lookup_job)
-    end
+    context "identified by EchnoNest" do
+      let(:match)       { build(:song) }
+      let(:lookup_job)  { [match.guid, match.artist_name, match.name] }
 
-    it "returns a 404" do
-      expect(response.status).to eq 404
-    end
+      before do
+        IdentifySongs.any_instance.stub(:call).and_return([match])
+        post :identify, code: match.guid
+      end
 
-    it "returns the song information" do
-      expect(json).to eq({
-        error: t("missing", collection: "songs"),
-        song: {
-          artist_name: match.artist_name,
-          name: match.name
-        }
-      })
+      it { should respond_with(:missing) }
+
+      it "enqueues a scrape job" do
+        expect(ScrapeWorker).to have_enqueued_job(*lookup_job)
+      end
+
+      it "returns the song information" do
+        expect(json).to eq({
+          error: t("missing", collection: "songs"),
+          song: {
+            artist_name: match.artist_name,
+            name: match.name
+          }
+        })
+      end
     end
   end
 end
