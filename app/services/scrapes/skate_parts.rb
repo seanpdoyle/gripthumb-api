@@ -1,7 +1,7 @@
 require 'nokogiri'
 
 class Scrapes::SkateParts
-  URI = URI.parse("http://www.skatevideosite.com/songsearch")
+  SEARCH = "http://www.skatevideosite.com/songsearch"
 
   def initialize(song)
     @song = song
@@ -33,12 +33,18 @@ class Scrapes::SkateParts
     end
 
     def document
-      @document ||= Nokogiri::HTML(response.body)
+      @document ||= Nokogiri::HTML(response)
+    end
+
+    def search_term
+      "#{@song.artist_name} #{@song.name}"
+    end
+
+    def search_uri
+      URI.parse([SEARCH, Rack::Utils.escape(search_term)].join('/'))
     end
 
     def response
-      Net::HTTP.post_form URI, {
-        searchterm: "#{@song.artist_name} #{@song.name}"
-      }
+      Net::HTTP.get(search_uri)
     end
 end
