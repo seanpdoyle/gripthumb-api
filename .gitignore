@@ -22,3 +22,4 @@ db/data/*
 coverage/
 
 docs/html/
+.zeus.sock/

@@ -15,9 +15,10 @@ gem 'sinatra', '>= 1.3.0', require: false
 gem 'unicorn'
 
 group :development, :test do
-  gem 'dotenv-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'dotenv-rails'
+  gem 'fdoc'
   gem 'pry'
 end
 

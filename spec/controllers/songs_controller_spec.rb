@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SongsController, "GET" do
+describe SongsController, "GET", fdoc: "songs/identify" do
   context "with an existing song code" do
     it "responds with the matching part" do
       part = create :part_with_song

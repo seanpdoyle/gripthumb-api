@@ -1,0 +1,73 @@
+---
+description: 'Identifies a song, along with the parts where it was featured'
+responseCodes:
+- status: 200
+  successful: true
+  description: 'The song was identified and there were parts where it was featured'
+- status: 404
+  successful: false
+  description: 'Either the song cannot be identified, or there are no parts where it was featured'
+
+requestParameters:
+  properties:
+    code:
+      description: The generated song thumbprint code
+      required: yes
+      type: string
+      example: abcdefg1234...
+responseParameters:
+  properties:
+    song:
+      description: The identified Song
+      required: yes
+      type: object
+      properties:
+        id:
+          description: the identifier
+          required: yes
+          type: integer
+          example: 1
+        name:
+          description: the name
+          required: yes
+          type: string
+          example: On to the Next One
+        artist_name:
+          description: the Artist name
+          required: yes
+          type: string
+          example: Jay-Z
+        parts:
+          description: the Part where the Song was featured
+          required: yes
+          type: array
+          items:
+            description: the Parts
+            required: yes
+            type: object
+            properties:
+              id:
+                description: the identifier
+                required: yes
+                type: integer
+                example: 2
+              name:
+                description: the name
+                required: yes
+                type: string
+                example: 'Mark Suciu #2'
+              video:
+                description: The Video where the Part is featured
+                required: yes
+                type: object
+                properties:
+                  id:
+                    description: the identifier
+                    required: yes
+                    type: integer
+                    example: 3
+                  name:
+                    description: The name
+                    required: yes
+                    type: string
+                    example: Sabotage3
