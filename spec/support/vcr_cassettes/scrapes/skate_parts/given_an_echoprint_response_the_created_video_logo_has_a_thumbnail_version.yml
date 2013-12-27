@@ -1,0 +1,187 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.skatevideosite.com/songsearch/JAY+Z+On+to+the+Next+One+(feat.+Swizz+Beats)
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Dec 2013 03:39:50 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - PHPSESSID=5f554e7e226888f9f74cf9a5aa925f71; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '4317'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n   <title>JAY Z On To
+        The Next One (feat. Swizz Beats) music,  JAY Z On To The Next One (feat. Swizz
+        Beats) songs, skate video soundtrack music search | Skatevideosite</title>\n
+        \   <meta name=\"description\" content=\"JAY Z On To The Next One (feat. Swizz
+        Beats) music, JAY Z On To The Next One (feat. Swizz Beats) songs. JAY Z On
+        To The Next One (feat. Swizz Beats) skate video songs.\" />\n   <meta name=\"keywords\"
+        content=\"skate, videos, video, online, skateboarding, skaters, soundtracks,
+        music, songs, trailers, covers, comments\" />\r\n   <meta name=\"robots\"
+        content=\"index,follow\" />\r\n   <meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=iso-8859-1\" />\r\n   <link rel=\"stylesheet\" href=\"/styles/default.css\"
+        />\r\n   <link rel=\"stylesheet\" href=\"/styles/basicstyle.css\" />\r\n   <link
+        rel=\"shortcut icon\" href=\"/favicon.ico\" />\r\n   <script type=\"text/javascript\"
+        src=\"/external.js\"></script>   \r\n   <script type=\"text/javascript\" src=\"https://apis.google.com/js/plusone.js\"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n<div
+        id=\"top\">\r\n\r\n<div style=\"height: 40px; float: left;\">\r\n\r\n<a href=\"/\"><img
+        src=\"/images/top.gif\" alt=\"\" style=\"float: left;\" /></a>\n\n<form method=\"post\"
+        action=\"/search\" id=\"searchform\" style=\"float: left; padding-top: 20px;\">\n<p
+        class=\"small\">\n<input type=\"hidden\" name=\"page\" value=\"search\" />\n<input
+        type=\"text\" name=\"searchterm\" style=\"width: 170px;\" /> \n<input type=\"hidden\"
+        name=\"count\" value=\"1\" />\n<input type=\"submit\" value=\"search\" style=\"font-weight:
+        bold;\" />\n\n\n</p>\n</form>\n\n<div id=\"toplinks\" style=\"clear: both;
+        padding-left: 15px;\">\n<a href=\"/register\">Register</a>\n<a href=\"/login\">Login</a>
+        \n<a href=\"/songsearch\">Song search</a> \n\n<a href=\"/add-skate-video\">Add
+        skate video</a> \r\n<a href=\"/contact\">Contact</a>\r\n\r\n<!-- AddThis Button
+        BEGIN -->\r\n<a class=\"addthis_button\" href=\"http://www.addthis.com/bookmark.php?v=250&amp;pubid=skater1500\"
+        style=\"margin-left: 30px;\"><img src=\"http://s7.addthis.com/static/btn/v2/lg-share-en.gif\"
+        style=\"width: 125px; height: 16px;\" alt=\"Bookmark and Share\" style=\"border:0\"/></a>\r\n<script
+        type=\"text/javascript\" src=\"http://s7.addthis.com/js/250/addthis_widget.js#pubid=skater1500\"></script>\r\n<!--
+        AddThis Button END -->\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        style=\"clear: both;\"></div><div style=\"width: 155px; float: left; text-align:
+        right;\">\n<div id=\"left\" style=\"width: 90%; text-align: left;\">\n\r\n<p
+        class=\"navtitle\">Menu</p>\r\n<a href=\"/\">Home</a>\r\n<a href=\"/soundtracks\">Soundtracks</a>\r\n<a
+        href=\"/skatevideos\">Skate videos</a>\r\n<a href=\"/skate-videos-online\">Skate
+        videos online</a>\r\n<a href=\"/downloads\">Daily clips</a>\r\n<a href=\"/video-parts\">Video
+        parts</a>\r\n<a href=\"/covers\">Covers</a>\r\n<a href=\"/skaters\">Skaters</a>\r\n<a
+        href=\"/filmmakers\">Filmmakers</a>\r\n<a href=\"/companies\">Companies</a>\r\n<a
+        href=\"/search\">Search</a>\r\n<a href=\"/register\">Register</a>\r\n<a href=\"/users\">Users</a>\r\n<a
+        href=\"/users/images\">Images</a>\r\n<a href=\"/users/videos\">Videos</a>\r\n<a
+        href=\"/forums\">Forums</a>\r\n</div>\n</div><div id=\"content\" style=\"width:
+        80%;\">\n<h1>JAY Z On To The Next One (feat. Swizz Beats) songs, skate music
+        search</h1>\n\n<p>Search all skate video soundtracks and downloads with artist
+        or song name.</p>\n\n<p>\n\n<form method=\"post\" action=\"/songsearch\">\n<p
+        style=\"margin-top: 10px;\">\n<input type=\"hidden\" name=\"page\" value=\"songsearch\"
+        />\n<input type=\"hidden\" name=\"select\" value=\"2\" />\n<input type=\"text\"
+        name=\"searchterm\" />\n<input type=\"submit\" name=\"submit\" value=\"Search
+        for artist or track\" />\n</p>\n</form>\n\n<p><strong>JAY Z On to the Next
+        One (feat. Swizz Beats)</strong> - Search results</p></div>\r\n\r\n<div id=\"bottommenu\"><p
+        style=\"text-align: center; margin: 5px;\">&#169; Copyright 2005-2013 Skatevideosite.com</p></div>\r\n\r\n<script
+        type=\"text/javascript\">\r\nvar gaJsHost = ((\"https:\" == document.location.protocol)
+        ? \"https://ssl.\" : \"http://www.\");\r\ndocument.write(unescape(\"%3Cscript
+        src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n</script>\r\n<script
+        type=\"text/javascript\">\r\nvar pageTracker = _gat._getTracker(\"UA-3279673-1\");\r\npageTracker._initData();\r\npageTracker._trackPageview();\r\n</script>\r\n\r\n\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Fri, 27 Dec 2013 03:39:22 GMT
+- request:
+    method: get
+    uri: http://www.skatevideosite.com/songsearch/JAY+Z+On+to+the+Next+One
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 27 Dec 2013 03:39:50 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - PHPSESSID=45b82bce117dbecb99deb782a5734901; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '4679'
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: "\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n   <title>JAY Z On To
+        The Next One music,  JAY Z On To The Next One songs, skate video soundtrack
+        music search | Skatevideosite</title>\n    <meta name=\"description\" content=\"JAY
+        Z On To The Next One music, JAY Z On To The Next One songs. JAY Z On To The
+        Next One skate video songs.\" />\n   <meta name=\"keywords\" content=\"skate,
+        videos, video, online, skateboarding, skaters, soundtracks, music, songs,
+        trailers, covers, comments\" />\r\n   <meta name=\"robots\" content=\"index,follow\"
+        />\r\n   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"
+        />\r\n   <link rel=\"stylesheet\" href=\"/styles/default.css\" />\r\n   <link
+        rel=\"stylesheet\" href=\"/styles/basicstyle.css\" />\r\n   <link rel=\"shortcut
+        icon\" href=\"/favicon.ico\" />\r\n   <script type=\"text/javascript\" src=\"/external.js\"></script>
+        \  \r\n   <script type=\"text/javascript\" src=\"https://apis.google.com/js/plusone.js\"></script>\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n<div
+        id=\"top\">\r\n\r\n<div style=\"height: 40px; float: left;\">\r\n\r\n<a href=\"/\"><img
+        src=\"/images/top.gif\" alt=\"\" style=\"float: left;\" /></a>\n\n<form method=\"post\"
+        action=\"/search\" id=\"searchform\" style=\"float: left; padding-top: 20px;\">\n<p
+        class=\"small\">\n<input type=\"hidden\" name=\"page\" value=\"search\" />\n<input
+        type=\"text\" name=\"searchterm\" style=\"width: 170px;\" /> \n<input type=\"hidden\"
+        name=\"count\" value=\"1\" />\n<input type=\"submit\" value=\"search\" style=\"font-weight:
+        bold;\" />\n\n\n</p>\n</form>\n\n<div id=\"toplinks\" style=\"clear: both;
+        padding-left: 15px;\">\n<a href=\"/register\">Register</a>\n<a href=\"/login\">Login</a>
+        \n<a href=\"/songsearch\">Song search</a> \n\n<a href=\"/add-skate-video\">Add
+        skate video</a> \r\n<a href=\"/contact\">Contact</a>\r\n\r\n<!-- AddThis Button
+        BEGIN -->\r\n<a class=\"addthis_button\" href=\"http://www.addthis.com/bookmark.php?v=250&amp;pubid=skater1500\"
+        style=\"margin-left: 30px;\"><img src=\"http://s7.addthis.com/static/btn/v2/lg-share-en.gif\"
+        style=\"width: 125px; height: 16px;\" alt=\"Bookmark and Share\" style=\"border:0\"/></a>\r\n<script
+        type=\"text/javascript\" src=\"http://s7.addthis.com/js/250/addthis_widget.js#pubid=skater1500\"></script>\r\n<!--
+        AddThis Button END -->\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n</div>\r\n\r\n<div
+        style=\"clear: both;\"></div><div style=\"width: 155px; float: left; text-align:
+        right;\">\n<div id=\"left\" style=\"width: 90%; text-align: left;\">\n\r\n<p
+        class=\"navtitle\">Menu</p>\r\n<a href=\"/\">Home</a>\r\n<a href=\"/soundtracks\">Soundtracks</a>\r\n<a
+        href=\"/skatevideos\">Skate videos</a>\r\n<a href=\"/skate-videos-online\">Skate
+        videos online</a>\r\n<a href=\"/downloads\">Daily clips</a>\r\n<a href=\"/video-parts\">Video
+        parts</a>\r\n<a href=\"/covers\">Covers</a>\r\n<a href=\"/skaters\">Skaters</a>\r\n<a
+        href=\"/filmmakers\">Filmmakers</a>\r\n<a href=\"/companies\">Companies</a>\r\n<a
+        href=\"/search\">Search</a>\r\n<a href=\"/register\">Register</a>\r\n<a href=\"/users\">Users</a>\r\n<a
+        href=\"/users/images\">Images</a>\r\n<a href=\"/users/videos\">Videos</a>\r\n<a
+        href=\"/forums\">Forums</a>\r\n</div>\n</div><div id=\"content\" style=\"width:
+        80%;\">\n<h1>JAY Z On To The Next One songs, skate music search</h1>\n\n<p>Search
+        all skate video soundtracks and downloads with artist or song name.</p>\n\n<p>\n\n<form
+        method=\"post\" action=\"/songsearch\">\n<p style=\"margin-top: 10px;\">\n<input
+        type=\"hidden\" name=\"page\" value=\"songsearch\" />\n<input type=\"hidden\"
+        name=\"select\" value=\"2\" />\n<input type=\"text\" name=\"searchterm\" />\n<input
+        type=\"submit\" name=\"submit\" value=\"Search for artist or track\" />\n</p>\n</form>\n\n<p><strong>JAY
+        Z On to the Next One</strong> - Search results</p><div class=\"skatevideo\">\n\t<a
+        href=\"/skatevideos/sabotage3/soundtrack\" class=\"videotitle\">Sabotage3</a><br
+        /><br />\n\t<a href=\"/skatevideos/sabotage3/soundtrack\"><img src=\"/images/phpThumb.php?src=covers/sabotage3.jpg&amp;w=90\"
+        \ alt=\"Sabotage3 cover\" title=\"Sabotage3 cover\" style=\"float: left; margin-left:
+        10px; box-shadow:2px 2px 3px #aaaaaa;\" /></a>\n    <p class=\"small\" style=\"float:
+        left; margin-top: 0px; width: 75%;\">Mark Suciu #2\r\n - <strong>Jay Z - On
+        To The Next One</strong><br />\n</p></div>\n</div>\r\n\r\n<div id=\"bottommenu\"><p
+        style=\"text-align: center; margin: 5px;\">&#169; Copyright 2005-2013 Skatevideosite.com</p></div>\r\n\r\n<script
+        type=\"text/javascript\">\r\nvar gaJsHost = ((\"https:\" == document.location.protocol)
+        ? \"https://ssl.\" : \"http://www.\");\r\ndocument.write(unescape(\"%3Cscript
+        src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\r\n</script>\r\n<script
+        type=\"text/javascript\">\r\nvar pageTracker = _gat._getTracker(\"UA-3279673-1\");\r\npageTracker._initData();\r\npageTracker._trackPageview();\r\n</script>\r\n\r\n\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Fri, 27 Dec 2013 03:39:23 GMT
+recorded_with: VCR 2.8.0

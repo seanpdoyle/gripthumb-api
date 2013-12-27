@@ -16,6 +16,10 @@ describe Scrapes::SkateParts, "given an Echoprint response" do
     ).call
   end
 
+  it "enqueues a job to download the Video's logo" do
+    expect(VideoLogoWorker).to have_enqueued_job(sabotage_3.id, "http://skatevideosite.com/images/phpThumb.php?src=covers/sabotage3.jpg&w=200")
+  end
+
   context "the created song" do
     subject(:created_song) { on_to_the_next_one }
 
@@ -34,13 +38,13 @@ describe Scrapes::SkateParts, "given an Echoprint response" do
 end
 
 def on_to_the_next_one
-  Song.find_by!(name: "On to the Next One")
+  @song ||= Song.find_by!(name: "On to the Next One")
 end
 
 def sabotage_3
-  Video.find_by!(name: "Sabotage3")
+  @video ||= Video.find_by!(name: "Sabotage3")
 end
 
 def mark_suciu_part
-  Part.last
+  @part ||= Part.last
 end

@@ -71,3 +71,8 @@ responseParameters:
                     required: yes
                     type: string
                     example: Sabotage3
+                  logo:
+                    description: The logo URL
+                    required: yes
+                    type: url
+                    example: http://cdn.gripthumb.com/logos/3.jpg
