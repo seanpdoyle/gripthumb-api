@@ -33,7 +33,7 @@ class Scrapes::SkateVideo
     end
 
     def logo_url
-      ["http://skatevideosite.com", logo_src.gsub("w=90", "w=200")].join
+      ["http://skatevideosite.com", logo_src].join
     end
 
     def video

@@ -17,7 +17,7 @@ describe Scrapes::SkateParts, "given an Echoprint response" do
   end
 
   it "enqueues a job to download the Video's logo" do
-    expect(VideoLogoWorker).to have_enqueued_job(sabotage_3.id, "http://skatevideosite.com/images/phpThumb.php?src=covers/sabotage3.jpg&w=200")
+    expect(VideoLogoWorker).to have_enqueued_job(sabotage_3.id, "http://skatevideosite.com/images/phpThumb.php?src=covers/sabotage3.jpg&w=90")
   end
 
   context "the created song" do

@@ -2,7 +2,7 @@ class Video < ActiveRecord::Base
   has_many :parts
   has_many :songs, through: :parts
 
-  has_attached_file :logo, styles: { thumb: "200x200>", square: "200x200#" },
+  has_attached_file :logo, styles: { square: "100x100#" },
     default_url: "/videos/:style/missing.jpg"
 
   validates_attachment :logo,
