@@ -19,6 +19,9 @@
 
 !db/data/.gitkeep
 db/data/*
+
+public/system/
+
 coverage/
 
 docs/html/

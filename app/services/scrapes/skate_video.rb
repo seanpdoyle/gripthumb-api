@@ -15,6 +15,10 @@ class Scrapes::SkateVideo
       song.save!
       video.save!
       part.update!(song: song, video: video)
+
+      if logo_src.present?
+        VideoLogoWorker.perform_async(video.id, logo_url)
+      end
     end
   end
 
@@ -22,6 +26,14 @@ class Scrapes::SkateVideo
     def matches?
       /#{song.name}/i.match(song_name) &&
       /#{song.artist_name}/i.match(artist_name)
+    end
+
+    def logo_src
+      (@node.css("a img").first || {})["src"]
+    end
+
+    def logo_url
+      ["http://skatevideosite.com", logo_src].join
     end
 
     def video

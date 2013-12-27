@@ -4,6 +4,7 @@ describe Scrapes::SkateParts, "given an Echoprint response" do
   let(:guid)    { "SODUMAG137283652FD" }
   let(:artist)  { "JAY Z" }
   let(:name)    { "On to the Next One (feat. Swizz Beats)" }
+  let(:logo_url){ "http://skatevideosite.com/images/phpThumb.php?src=covers/sabotage3.jpg&w=90" }
 
   before do
     Scrapes::SkateParts.new(
@@ -14,6 +15,10 @@ describe Scrapes::SkateParts, "given an Echoprint response" do
         guid: guid
       )
     ).call
+  end
+
+  it "enqueues a job to download the Video's logo" do
+    expect(VideoLogoWorker).to have_enqueued_job(sabotage_3.id, logo_url)
   end
 
   context "the created song" do
@@ -34,13 +39,13 @@ describe Scrapes::SkateParts, "given an Echoprint response" do
 end
 
 def on_to_the_next_one
-  Song.find_by!(name: "On to the Next One")
+  @song ||= Song.find_by!(name: "On to the Next One")
 end
 
 def sabotage_3
-  Video.find_by!(name: "Sabotage3")
+  @video ||= Video.find_by!(name: "Sabotage3")
 end
 
 def mark_suciu_part
-  Part.last
+  @part ||= Part.last
 end
