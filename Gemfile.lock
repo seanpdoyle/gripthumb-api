@@ -48,6 +48,10 @@ GEM
     autoscaler (0.7.0)
       heroku-api
       sidekiq (~> 2.7)
+    aws-sdk (1.29.1)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
+      uuidtools (~> 2.1)
     better_errors (1.0.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -203,6 +207,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    uuidtools (2.1.4)
     vcr (2.8.0)
     webmock (1.16.0)
       addressable (>= 2.2.7)
@@ -214,6 +219,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   autoscaler
+  aws-sdk
   better_errors
   binding_of_caller
   database_cleaner

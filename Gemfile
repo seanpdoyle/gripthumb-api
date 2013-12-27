@@ -40,6 +40,7 @@ end
 
 group :staging, :production do
   gem 'autoscaler'
+  gem 'aws-sdk'
   gem 'newrelic_rpm', '>= 3.6.7'
   gem 'rails_12factor'
 end
