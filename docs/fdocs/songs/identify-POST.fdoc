@@ -74,5 +74,5 @@ responseParameters:
                   logo:
                     description: The logo URL
                     required: yes
-                    type: url
+                    type: string
                     example: http://cdn.gripthumb.com/logos/3.jpg
