@@ -20,7 +20,7 @@
 !db/data/.gitkeep
 db/data/*
 
-public/system
+public/system/
 
 coverage/
 
