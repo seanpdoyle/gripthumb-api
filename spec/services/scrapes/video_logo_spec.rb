@@ -11,14 +11,14 @@ describe Scrapes::VideoLogo, "#call" do
   end
 
   it "has a thumbnail version" do
-    expect(logo.url(:thumb)).to match logo_matcher(:thumb)
+    expect(logo.url(:thumb)).not_to be_missing_logo_for(:thumb)
   end
 
   it "has as square version" do
-    expect(logo.url(:square)).to match logo_matcher(:square)
+    expect(logo.url(:square)).not_to be_missing_logo_for(:square)
   end
 end
 
-def logo_matcher(type)
-  /system\/videos\/logos\/000\/000\/\d\/#{type}\/.*\.jpg/i
+def be_missing_logo_for(type)
+  eq "/videos/#{type}/missing.jpg"
 end

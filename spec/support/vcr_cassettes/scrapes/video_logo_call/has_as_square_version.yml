@@ -19,7 +19,7 @@ http_interactions:
       message: Moved Permanently
     headers:
       Date:
-      - Fri, 27 Dec 2013 16:29:52 GMT
+      - Fri, 27 Dec 2013 16:29:54 GMT
       Server:
       - Apache/2.2.22 (Debian)
       Location:
@@ -43,7 +43,7 @@ http_interactions:
         <address>Apache/2.2.22 (Debian) Server at skatevideosite.com Port 80</address>
         </body></html>
     http_version: 
-  recorded_at: Fri, 27 Dec 2013 16:29:25 GMT
+  recorded_at: Fri, 27 Dec 2013 16:29:27 GMT
 - request:
     method: get
     uri: http://www.skatevideosite.com/images/phpThumb.php?src=covers/sabotage3.jpg&w=200
@@ -63,7 +63,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Fri, 27 Dec 2013 16:29:53 GMT
+      - Fri, 27 Dec 2013 16:29:54 GMT
       Server:
       - Apache/2.2.22 (Debian)
       X-Powered-By:
@@ -82,7 +82,7 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Dec 2013 16:29:26 GMT
+  recorded_at: Fri, 27 Dec 2013 16:29:27 GMT
 - request:
     method: get
     uri: http://www.skatevideosite.com/images/cache/www.skatevideosite.com__srcd4dcb1493695e05ca608498dba194d7c_par19c7b3463a045026c7964c7b50a8984a_dat1388139382.jpeg
@@ -102,7 +102,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Dec 2013 16:29:53 GMT
+      - Fri, 27 Dec 2013 16:29:54 GMT
       Server:
       - Apache/2.2.22 (Debian)
       Last-Modified:
@@ -265,5 +265,5 @@ http_interactions:
         mIR0YWiZ/PGaKKko04rW3tUCwQRRKOAEQLj8qnoooAKKKKACiiigAooooAKK
         KKAP/9k=
     http_version: 
-  recorded_at: Fri, 27 Dec 2013 16:29:26 GMT
+  recorded_at: Fri, 27 Dec 2013 16:29:27 GMT
 recorded_with: VCR 2.8.0
