@@ -1,7 +1,11 @@
+require 'fileutils'
+
 namespace :fdoc do
   desc "Generate FDOC html"
   task html: :environment do
-    puts "----- Generating API docs..."
+    puts "----- Clearing old API docs..."
+    `rm -rf docs/html`
+    puts "----- Generating new API docs..."
     `bin/fdoc convert ./docs/fdocs --output=docs/html --url-base-path='/'`
     puts "----- Docs generated! To view, run 'open docs/html/index.html'"
   end
