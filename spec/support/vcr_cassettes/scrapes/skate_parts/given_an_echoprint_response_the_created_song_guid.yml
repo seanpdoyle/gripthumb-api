@@ -19,13 +19,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Dec 2013 16:29:56 GMT
+      - Fri, 27 Dec 2013 19:45:52 GMT
       Server:
       - Apache/2.2.22 (Debian)
       X-Powered-By:
       - PHP/5.4.4-14+deb7u7
       Set-Cookie:
-      - PHPSESSID=bn2seprgas3cj6a4lqe6fsq465; path=/
+      - PHPSESSID=tmec4cm56hkimoaio4ib1oqg63; path=/
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -92,7 +92,7 @@ http_interactions:
         src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n</script>\n<script
         type=\"text/javascript\">\nvar pageTracker = _gat._getTracker(\"UA-3279673-1\");\npageTracker._initData();\npageTracker._trackPageview();\n</script>\n\n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Fri, 27 Dec 2013 16:29:29 GMT
+  recorded_at: Fri, 27 Dec 2013 19:45:25 GMT
 - request:
     method: get
     uri: http://www.skatevideosite.com/songsearch/JAY+Z+On+to+the+Next+One
@@ -112,13 +112,13 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 27 Dec 2013 16:29:56 GMT
+      - Fri, 27 Dec 2013 19:45:52 GMT
       Server:
       - Apache/2.2.22 (Debian)
       X-Powered-By:
       - PHP/5.4.4-14+deb7u7
       Set-Cookie:
-      - PHPSESSID=skscdj61hmrc7k2dugo41pie43; path=/
+      - PHPSESSID=gif0bkqtp631qkbgf9dbskntn1; path=/
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -189,5 +189,5 @@ http_interactions:
         src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n</script>\n<script
         type=\"text/javascript\">\nvar pageTracker = _gat._getTracker(\"UA-3279673-1\");\npageTracker._initData();\npageTracker._trackPageview();\n</script>\n\n\n</body>\n</html>\n"
     http_version: 
-  recorded_at: Fri, 27 Dec 2013 16:29:29 GMT
+  recorded_at: Fri, 27 Dec 2013 19:45:25 GMT
 recorded_with: VCR 2.8.0

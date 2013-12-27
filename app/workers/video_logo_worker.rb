@@ -1,10 +1,9 @@
 class VideoLogoWorker
   include Sidekiq::Worker
 
-  ERRORS = [Encoding::UndefinedConversionError, ActiveRecord::RecordNotFound].freeze
-
   def perform(video_id, logo_url)
-    Scrapes::VideoLogo.new.call(Video.find(video_id), logo_url)
-  rescue *ERRORS
+    video = Video.find(video_id)
+    video.update!(logo: Downloads.new.call(logo_url.to_s))
+  rescue ActiveRecord::RecordNotFound
   end
 end
