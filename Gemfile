@@ -26,6 +26,8 @@ end
 
 group :development do
   gem 'foreman'
+  gem 'spring'
+  gem 'spring-commands-rspec'
 end
 
 group :test do
@@ -36,7 +38,7 @@ group :test do
   gem 'shoulda-matchers'
   gem 'timecop'
   gem 'vcr'
-  gem 'webmock'
+  gem 'webmock', '1.15.0'
 end
 
 group :staging, :production do
