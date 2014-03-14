@@ -41,7 +41,10 @@ class Scrapes::SkateVideo
     end
 
     def video_name
-      (@node.css("a.videotitle").first.content || "").squish
+      @video_name ||= begin
+        video_title = @node.css("a.videotitle").first || OpenStruct.new
+        video_title.content.to_s.squish
+      end
     end
 
     def part
@@ -65,6 +68,9 @@ class Scrapes::SkateVideo
     end
 
     def info_node
-      @info_node ||= @node.css("p.small").first.content.squish
+      @info_node ||= begin
+        paragraph = @node.css("p.small").first || OpenStruct.new
+        paragraph.content.to_s.squish
+      end
     end
 end
