@@ -69,7 +69,7 @@ class Scrapes::SkateVideo
 
     def info_node
       @info_node ||= begin
-        paragraph = @node.css("p.small").first || OpenStruct.new
+        paragraph = @node.css("p").last || OpenStruct.new
         paragraph.content.to_s.squish
       end
     end
