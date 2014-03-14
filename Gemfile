@@ -38,12 +38,12 @@ group :test do
   gem 'shoulda-matchers'
   gem 'timecop'
   gem 'vcr'
-  gem 'webmock', '1.15.0'
+  gem 'webmock', '~> 1.16'
 end
 
 group :staging, :production do
   gem 'autoscaler'
   gem 'aws-sdk'
-  gem 'newrelic_rpm', '>= 3.6.7'
+  gem 'newrelic_rpm'
   gem 'rails_12factor'
 end

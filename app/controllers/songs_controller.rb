@@ -10,24 +10,25 @@ class SongsController < InheritedResources::Base
   end
 
   private
-    def identifier
-      @identifier ||= IdentifySongs.new(song_code)
-    end
+  
+  def identifier
+    @identifier ||= IdentifySongs.new(song_code)
+  end
 
-    def missing_song_response
-      missing_response = {
-        error: t("missing", collection: "songs")
+  def missing_song_response
+    missing_response = {
+      error: t("missing", collection: "songs")
+    }
+    if best_match = identifier.call.first
+      missing_response.merge! song: {
+        name: best_match.name,
+        artist_name: best_match.artist_name
       }
-      if best_match = identifier.call.first
-        missing_response.merge! song: {
-          name: best_match.name,
-          artist_name: best_match.artist_name
-        }
-      end
-      missing_response
     end
+    missing_response
+  end
 
-    def song_code
-      params[:code]
-    end
+  def song_code
+    params[:code]
+  end
 end
